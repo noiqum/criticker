@@ -36,14 +36,77 @@
         letter-spacing: 2px;
         text-transform: uppercase; } }
 
+.auth__container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+  width: 100vw;
+  height: 100vh; }
+
+.auth__img {
+  grid-column: 1/2;
+  background: rgba(0, 0, 0, 0) url("./sass/images/auth.jpg") repeat scroll 0% 0%/cover;
+  width: 100%;
+  height: 100%;
+  min-height: 200px; }
+
+.auth-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .auth-form__header h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--blue-2); }
+  .auth-form__header p {
+    font-size: 3rem;
+    color: var(--blue-3);
+    text-align: center; }
+  .auth-form__container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .auth-form__container > div {
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 2rem; }
+      .auth-form__container > div > input {
+        padding: 1.3rem 4rem;
+        border: none;
+        border: 1px solid grey;
+        border-radius: 5px;
+        outline: none;
+        font-size: 1.5rem; }
+      .auth-form__container > div > button {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid var(--blue-3);
+        border-radius: 5px;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: var(--blue-2); }
+        .auth-form__container > div > button:hover {
+          background-color: var(--blue-2);
+          color: #fff; }
+
 :root {
   font-size: 10px;
-  --blue-1:#1E1F26;
-  --blue-2:#283655;
-  --blue-3:#4d648d;
-  --blue-4:#d0e1f9;
-  --white:#fff;
-  --black:rgb(0, 0, 0); }
+  --blue-1: #1e1f26;
+  --blue-2: #283655;
+  --blue-3: #4d648d;
+  --blue-4: #d0e1f9;
+  --white: #fff;
+  --black: rgb(0, 0, 0); }
 
 body {
   margin: 0;

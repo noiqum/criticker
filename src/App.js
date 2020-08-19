@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/navbar/navbar';
+import Auth from './components/auth/auth';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,16 +11,16 @@ import {
 function App() {
   return (
     <Router>
-    <div className="App">
-     <Navbar/>
+      <div className="App">
+        <Navbar />
         <Switch>
           <Route exact path='/'></Route>
-          <Route path='/auth'></Route>
+          <Route path='/auth' component={Auth} ></Route>
           <Route path='/movies'></Route>
           <Route path='/allies'></Route>
           <Route path='/profile'></Route>
         </Switch>
-    </div>
+      </div>
     </Router>
   );
 }

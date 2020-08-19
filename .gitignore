@@ -10,7 +10,7 @@
 
 # production
 /build
-
+/todo
 # misc
 .DS_Store
 .env.local
